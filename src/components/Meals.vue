@@ -1,0 +1,20 @@
+<script setup>
+import MealiItem from './MealiItem.vue';
+
+const { meals } = defineProps({
+    meals: {
+        required: true, 
+        type: Array
+    }
+})
+</script>
+
+<template>
+    <div class="grid grid-cols-3 gap-5 p-8">
+        <MealiItem v-for="meal in meals" :key="meal.idMeal" :meal="meal"></MealiItem>
+    </div>
+    <div v-if="!meals.length" class="flex justify-center text-gray-600">
+        Meals Not Found
+
+    </div>
+</template>
