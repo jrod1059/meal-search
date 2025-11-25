@@ -2,10 +2,10 @@ import useAPI from "@/composables/useAPI";
 
 const { api } = useAPI()
 
-export function setSearchMeals({ commit }, keyword) {
+export function searchMeals({ commit }, keyword) {
     api.get(`search.php?s=${keyword}`)
         .then(({ data }) => {
-         commit('setSearchMeals', data.meals)
+        commit('setSearchedMeals', data.meals)
         
     })
     
