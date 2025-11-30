@@ -8,8 +8,8 @@ import HomePage from '@/views/HomePage.vue';
     <RouterLink :to="{ name: 'Home' }">Home</RouterLink>
     <RouterLink :to="{ name: 'MealsByName' }">Meals By Name</RouterLink>
     <RouterLink :to="{ name: 'MealsByLetter' }">Meals by Letter</RouterLink>
-    <RouterLink :to="{ name: 'MealsByIngridients' }">Meals By Ingridients</RouterLink>
-    <RouterLink :to="{ name: 'Ingridients' }">Ingridients</RouterLink>
+    <RouterLink :to="{ name: 'Ingridients' }">Meals By Ingridients</RouterLink>
+    
    
     
   </nav>
